@@ -1,0 +1,35 @@
+{
+  "name": "deckforge",
+  "version": "1.0.0",
+  "description": "A Remotion-style CLI framework for building presentations with React components. Define slides as React, export to HTML/PDF/PPTX.",
+  "main": "src/index.js",
+  "bin": {
+    "deckforge": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js dev",
+    "build:html": "node bin/cli.js export --format html",
+    "build:pdf": "node bin/cli.js export --format pdf",
+    "build:pptx": "node bin/cli.js export --format pptx",
+    "build:all": "node bin/cli.js export --format all",
+    "create": "node bin/cli.js create",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["presentation", "slides", "react", "cli", "pptx", "pdf"],
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "esbuild": "^0.20.0",
+    "commander": "^12.0.0",
+    "chalk": "^4.1.2",
+    "chokidar": "^3.6.0",
+    "express": "^4.18.2",
+    "ws": "^8.16.0",
+    "pptxgenjs": "^3.12.0",
+    "puppeteer": "^22.0.0",
+    "ora": "^5.4.1",
+    "inquirer": "^8.2.6",
+    "fs-extra": "^11.2.0"
+  }
+}
